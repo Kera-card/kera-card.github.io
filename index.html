@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KeraCard™ - We delete what doesn't matter</title>
+  <meta name="description" content="Anti-OBS. Anti-Adobe. Pro-creators. Building the tools you want.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+    
+    :root {
+      --kera-red: #FF2A2A;
+    }
+    
+    * { 
+      font-family: 'Space Grotesk', sans-serif; 
+      cursor: crosshair;
+    }
+    
+    body { 
+      background: #000; 
+    }
+    
+    .kera-red { color: var(--kera-red); }
+    .bg-kera-red { background: var(--kera-red); }
+    
+    @keyframes slash {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    
+    .slash-in {
+      animation: slash 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      transform-origin: left;
+    }
+    
+    .brutal-border {
+      border: 2px solid #fff;
+    }
+    
+    .brutal-border:hover {
+      border-color: var(--kera-red);
+      box-shadow: 4px 4px 0 var(--kera-red);
+      transform: translate(-2px, -2px);
+    }
+    
+    .red-corner {
+      position: relative;
+    }
+    
+    .red-corner::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 24px 24px 0;
+      border-color: transparent var(--kera-red) transparent transparent;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen antialiased">
+  <!-- 
+  /////////////////////////////////
+  //  Intellectual Property of
+  //  KeraCard™ Labs
+  //  WE DELETE WHAT DOESN'T MATTER
+  /////////////////////////////////
+  -->
+  
+  <div class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+    
+    <!-- Header -->
+    <div class="mb-20 md:mb-32">
+      <div class="flex items-center gap-4 mb-8">
+        <div class="w-14 h-14 bg-black brutal-border red-corner flex items-center justify-center">
+          <span class="text-3xl font-bold">K</span>
+        </div>
+        <h1 class="text-3xl font-bold tracking-tight">KeraCard™</h1>
+      </div>
+      
+      <h2 class="text-4xl md:text-6xl font-bold leading-none mb-6">
+        WE DELETE<br>
+        WHAT DOESN'T<br>
+        <span class="kera-red">MATTER.</span>
+      </h2>
+      
+      <div class="h-1 w-24 bg-kera-red mb-8 slash-in"></div>
+      
+      <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl">
+        Making life easier for you.<br>
+        Building the tools you want.
+      </p>
+    </div>
+
+    <!-- Products -->
+    <div class="mb-20 md:mb-32">
+      <div class="text-sm uppercase tracking-[0.4em] text-zinc-500 mb-8">CURRENT WEAPON</div>
+      
+      <a href="/flopiq" class="block group">
+        <div class="brutal-border bg-black p-8 md:p-10 transition-all duration-200">
+          <div class="flex items-start justify-between mb-4">
+            <h3 class="text-3xl font-bold">FlopIQ</h3>
+            <span class="text-xs px-3 py-1 brutal-border bg-kera-red text-black font-bold">
+              BUILDING
+            </span>
+          </div>
+          <p class="text-zinc-400 mb-6 text-lg">
+            VidIQ tells you what to do. We tell you why you flopped. Drop MP4 → get roasted → go viral.
+          </p>
+          <div class="flex items-center kera-red font-bold group-hover:gap-2 transition-all">
+            STEAL THE ALPHA
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Philosophy -->
+    <div class="mb-20 md:mb-32">
+      <div class="text-sm uppercase tracking-[0.4em] text-zinc-500 mb-8">LAWS</div>
+      <div class="grid md:grid-cols-2 gap-0">
+        
+        <div class="brutal-border bg-black p-8 border-b-0 md:border-b-2 md:border-r-0">
+          <div class="kera-red font-bold mb-3 text-xl">01. DELETE OR DIE</div>
+          <p class="text-zinc-400">If users need a tutorial, we failed. If it doesn’t ship in 7 days, we scrap it.</p>
+        </div>
+        
+        <div class="brutal-border bg-black p-8 border-b-0">
+          <div class="kera-red font-bold mb-3 text-xl">02. ONE CORNER</div>
+          <p class="text-zinc-400">Every tool does one thing. OBS has 47 menus. We have 1 red corner.</p>
+        </div>
+        
+        <div class="brutal-border bg-black p-8 md:border-r-0 border-b-0 md:border-b-2">
+          <div class="kera-red font-bold mb-3 text-xl">03. RAGE DRIVEN</div>
+          <p class="text-zinc-400">We build what we're mad about. Adobe made us do this.</p>
+        </div>
+        
+        <div class="brutal-border bg-black p-8">
+          <div class="kera-red font-bold mb-3 text-xl">04. PUBLIC BEATS</div>
+          <p class="text-zinc-400">Ship public. Get roasted. Iterate. Cowards build in private.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="brutal-border bg-kera-red p-8 md:p-12 mb-20 text-black">
+      <h3 class="text-3xl md:text-4xl font-bold mb-4">OBS SIMPS KEEP SCROLLING.</h3>
+      <p class="text-xl mb-6 text-black/80">Creators who hate tutorials: we’re building for you.</p>
+      <a href="https://github.com/Kera-card" class="inline-block bg-black text-white px-8 py-4 font-bold brutal-border border-black hover:bg-white hover:text-black transition-colors">
+        WATCH US BUILD
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <div class="border-t-2 border-white pt-8 text-sm text-zinc-500 flex flex-col md:flex-row justify-between gap-6">
+      <div>© 2026 KERACARD™ LABS</div>
+      <div class="flex gap-8">
+        <a href="https://twitter.com/keracard" class="hover:kera-red transition-colors font-bold">TWITTER</a>
+        <a href="https://github.com/kera-card" class="hover:kera-red transition-colors font-bold">GITHUB</a>
+        <a href="mailto:keracard.offical@gmail.com" class="hover:kera-red transition-colors font-bold">CONTACT</a>
+      </div>
+    </div>
